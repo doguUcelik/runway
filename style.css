@@ -94,6 +94,7 @@ nav a:hover::after {
     overflow: hidden;
     background: var(--primary);
     margin-top: 0;
+    position: relative;
 }
 
 .hero-image {
@@ -102,6 +103,35 @@ nav a:hover::after {
     display: block;
     max-height: 200px;
     object-fit: cover;
+}
+
+/* Facebook Link auf Hero Banner */
+.facebook-link {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.facebook-link:hover {
+    opacity: 0.8;
+}
+
+/* Screen Reader Text */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border-width: 0;
 }
 
 /* ===== INTRO SECTION ===== */
@@ -420,6 +450,11 @@ footer a:hover {
 
     .hero-image {
         max-height: 250px;
+    }
+
+    .facebook-link {
+        width: 140px;
+        height: 60px;
     }
 
     .intro {
