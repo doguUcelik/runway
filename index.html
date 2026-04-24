@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUNWAY Sandwiches & Gutes Essen | Frankfurt am Main</title>
+    <meta name="description" content="Frische Sandwiches, Panini und leckere Gerichte in Frankfurt. Handwerk, Liebe und europäische Gewürze.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">RUN<span class="accent">WAY</span></div>
+        <nav>
+            <a href="#menu">Menü</a>
+            <a href="#specials">Spezial</a>
+            <a href="#contact">Kontakt</a>
+        </nav>
+        <button class="menu-toggle" onclick="alert('Mobile Menu — wird noch implementiert')">☰</button>
+    </header>
+
+    <!-- HERO BANNER WITH TOP IMAGE -->
+    <div class="hero-banner">
+        <img src="images/top.png" alt="RUNWAY to Delicious Food" class="hero-image" usemap="#topMap">
+        <map name="topMap" id="topMap">
+            <area shape="poly" coords="240,137,218,97,361,16,381,54" href="https://www.facebook.com/runwaysandwiches/" target="_blank" alt="RUNWAY auf Facebook">
+        </map>
+    </div>
+
+    <!-- INTRO -->
+    <section class="intro">
+        <h1>TO DELICIOUS FOOD!</h1>
+        <p>Immer frisch und mit Liebe zubereitet. Bei uns steht Handwerk hoch im Kurs</p>
+        <br> <p>Fernöstliche Gewürze Abgestimmt auf den europäischen Gaumen</p>
+        <a href="#contact" class="cta-button">Jetzt bestellen</a>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about">
+        <h2 class="section-title">Wer wir sind</h2>
+        <p class="about-text">
+            Bei <span class="highlight">RUNWAY</span> steht Handwerk hoch im Kurs. Jedes Sandwich wird frisch zubereitet mit sorgfältig ausgewählten Zutaten und europäischen Gewürzen, die dein Gaumen nie vergessen wird.
+        </p>
+        <p class="about-text">
+            Wir machen gutes Essen besser
+        </p>
+    </section>
+
+    <!-- MENU -->
+    <section class="menu-section" id="menu">
+        <h2 class="section-title">Unser Menü</h2>
+        <div class="menu-container">
+            <div class="menu-grid">
+                <div class="menu-card" onclick="loadMenuCategory('sandwiches')">
+                    <img src="images/sandwiches.png" alt="Sandwiches & Panini" class="card-image">
+                    <h3>Sandwiches & Panini</h3>
+                    <p>Knusprig, frisch und mit Premium-Zutaten gefüllt. Unsere Klassiker sind Legende.</p>
+                </div>
+                <div class="menu-card" onclick="loadMenuCategory('wraps')">
+                    <img src="images/wraps.png" alt="Wraps" class="card-image">
+                    <h3>Wraps</h3>
+                    <p></p>
+                </div>
+                <div class="menu-card" onclick="loadMenuCategory('salate')">
+                    <img src="images/salate.png" alt="Salate" class="card-image">
+                    <h3>Salate</h3>
+                    <p></p>
+                </div>
+                <div class="menu-card" onclick="loadMenuCategory('getraenke')">
+                    <img src="images/getränke.png" alt="Getränke" class="card-image">
+                    <h3>Getränke</h3>
+                    <p></p>
+                </div>
+                <div class="menu-card" onclick="loadMenuCategory('fruestueck')">
+                    <img src="images/süßes.png" alt="Süßes Frühstück" class="card-image">
+                    <h3>Süßes Frühstück</h3>
+                    <p></p>
+                </div>
+                <div class="menu-card" onclick="loadMenuCategory('catering')">
+                    <img src="images/office.png" alt="Office-/Partyservice" class="card-image">
+                    <h3>Office-/Partyservice</h3>
+                    <p></p>
+                </div>
+                 <div class="menu-card" onclick="loadMenuCategory('lunch')">
+                    <img src="images/lunch.png" alt="lunch" class="card-image">
+                    <h3>Mittagessen & Abendessen</h3>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SPECIALS -->
+    <section class="specials" id="specials">
+        <h2 class="section-title">Öffnungszeiten & Services</h2>
+        <div class="specials-grid">
+            <div class="special-item">
+                <strong>📅 Montag bis Freitag</strong>
+                8:00 – 20:00 Uhr
+            </div>
+            <div class="special-item">
+                <strong>📅 Bei Messen und Veranstaltungen</strong>
+                durchgehend bis 23:00 Uhr
+            </div>
+            <div class="special-item">
+                <strong>📦 Takeaway</strong>
+                Alles zum Mitnehmen — immer frisch!
+            </div>
+            <div class="special-item">
+                <strong>👥 Gruppen & Events</strong>
+                Party- & Catering-Service verfügbar
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontakt infos -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">Komm vorbei!</h2>
+        <div class="contact-info">
+            <div class="info-block">
+                <h4>📍 Standort</h4>
+                <p>Platz der Einheit 1<br>60327 Frankfurt am Main</p>
+            </div>
+            <div class="info-block">
+                <h4>📞 Kontakt</h4>
+                <p><a href="tel:069-75067768">069 – 75067768 Telefon </a><br>
+                    <a href="tel:069-75067769">069 – 75067769 Telefax</a></p>
+            </div>
+            <div class="info-block">
+                <h4>✉️ Email</h4>
+                <p><a href="mailto:info@runway-sandwiches.de">info@runway-sandwiches.de</a><br><a href="https://www.runway-sandwiches.de" target="_blank">www.runway-sandwiches.de</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Modales Overlay -->
+    <div id="menuModal" class="menu-modal">
+        <div class="menu-modal-content">
+            <button class="menu-modal-close" onclick="closeMenuCategory()">✕</button>
+            <div class="category-header">
+                <h1 id="modalTitle">Kategorie</h1>
+                <p id="modalDescription">Beschreibung</p>
+            </div>
+            <div id="menuItemsContainer" class="menu-items">
+                <!-- Items werden hier eingefügt -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Bereich -->
+    <footer>
+        <p>&copy; 2026 RUNWAY Sandwiches & Gutes Essen. Alle Rechte vorbehalten.</p>
+        <p><a href="#">Impressum</a> • <a href="#">Datenschutz</a> • <a href="#">AGB</a></p>
+        <p style="margin-top: 1rem; font-size: 0.8rem; color: rgba(255, 255, 255, 0.6);">Website von <a href="https://dogu-webdev.de" target="_blank">Webentwicklung Dogu Ulas Celik</a></p>
+    </footer>
+    <script src="runway-menu.js"></script>
+</body>
+</html>
