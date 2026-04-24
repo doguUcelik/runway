@@ -4,56 +4,56 @@ const menuData = {
         title: 'Sandwiches & Panini',
         description: '',
         items: [
-            { name: 'Platzhalter Sandwich 1', price: '0,00', description: 'Hier kommt deine Beschreibung hin' },
-            { name: 'Platzhalter Sandwich 2', price: '0,00', description: 'Hier kommt deine Beschreibung hin' }
+            { name: 'Platzhalter Sandwich 1', price: '0,00', description: 'Hier kommt bald eine Beschreibung hin' },
+            { name: 'Platzhalter Sandwich 2', price: '0,00', description: 'Hier kommt bald eine Beschreibung hin' }
         ]
     },
     wraps: {
         title: 'Wraps',
         description: '',
         items: [
-            { name: 'Platzhalter Wrap 1', price: '0,00', description: 'Hier kommt deine Beschreibung hin' },
-            { name: 'Platzhalter Wrap 2', price: '0,00', description: 'Hier kommt deine Beschreibung hin' }
+            { name: 'Platzhalter Wrap 1', price: '0,00', description: 'Hier kommt bald eine Beschreibung hin' },
+            { name: 'Platzhalter Wrap 2', price: '0,00', description: 'Hier kommt bald eine Beschreibung hin' }
         ]
     },
     salate: {
         title: 'Salate',
         description: '',
         items: [
-            { name: 'Platzhalter Salat 1', price: '0,00', description: 'Hier kommt deine Beschreibung hin' },
-            { name: 'Platzhalter Salat 2', price: '0,00', description: 'Hier kommt deine Beschreibung hin' }
+            { name: 'Platzhalter Salat 1', price: '0,00', description: 'Hier kommt bald eine Beschreibung hin' },
+            { name: 'Platzhalter Salat 2', price: '0,00', description: 'Hier kommt bald eine Beschreibung hin' }
         ]
     },
     getraenke: {
         title: 'Getränke',
         description: '',
         items: [
-            { name: 'Platzhalter Getränk 1', price: '0,00', description: 'Hier kommt deine Beschreibung hin' },
-            { name: 'Platzhalter Getränk 2', price: '0,00', description: 'Hier kommt deine Beschreibung hin' }
+            { name: 'Platzhalter Getränk 1', price: '0,00', description: 'Hier kommt bald eine Beschreibung hin' },
+            { name: 'Platzhalter Getränk 2', price: '0,00', description: 'Hier kommt bald eine Beschreibung hin' }
         ]
     },
      lunch: {
         title: 'Mittagessen und Abendessen',
         description: '',
         items: [
-            { name: 'Platzhalter Gericht 1', price: '0,00', description: 'Hier kommt deine Beschreibung hin' },
-            { name: 'Platzhalter Gericht 2', price: '0,00', description: 'Hier kommt deine Beschreibung hin' }
+            { name: 'Platzhalter Gericht 1', price: '0,00', description: 'Hier kommt bald eine Beschreibung hin' },
+            { name: 'Platzhalter Gericht 2', price: '0,00', description: 'Hier kommt bald eine Beschreibung hin' }
         ]
     },
     fruestueck: {
         title: 'Süßes Frühstück',
         description: '',
         items: [
-            { name: 'Platzhalter Gebäck 1', price: '0,00', description: 'Hier kommt deine Beschreibung hin' },
-            { name: 'Platzhalter Gebäck 2', price: '0,00', description: 'Hier kommt deine Beschreibung hin' }
+            { name: 'Platzhalter Gebäck 1', price: '0,00', description: 'Hier kommt bald eine Beschreibung hin' },
+            { name: 'Platzhalter Gebäck 2', price: '0,00', description: 'Hier kommt bald eine Beschreibung hin' }
         ]
     },
     catering: {
         title: 'Office-/Partyservice',
         description: '',
         items: [
-            { name: 'Platzhalter Paket 1', price: '0,00', description: 'Hier kommt deine Beschreibung hin' },
-            { name: 'Platzhalter Paket 2', price: '0,00', description: 'Hier kommt deine Beschreibung hin' }
+            { name: 'Platzhalter Paket 1', price: '0,00', description: 'Hier kommt bald eine Beschreibung hin' },
+            { name: 'Platzhalter Paket 2', price: '0,00', description: 'Hier kommt bald eine Beschreibung hin' }
         ]
     }
 };
