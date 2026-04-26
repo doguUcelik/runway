@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <!-- Header sektion -->
     <header>
         <div class="logo">RUN<span class="accent">WAY</span></div>
@@ -19,15 +18,13 @@
         </nav>
         <button class="menu-toggle" onclick="alert('Mobiles Menu wird noch implementiert')">☰</button>
     </header>
-
     <!-- Hero Banner mit facebook bild -->
     <div class="hero-banner">
-        <img src="images/Top.png" alt="RUNWAY to Delicious Food" class="hero-image" usemap="#topMap">
-        <map name="topMap" id="topMap">
-            <area shape="poly" coords="240,137,218,97,361,16,381,54" href="https://www.facebook.com/runwaysandwiches/" target="_blank" alt="RUNWAY auf Facebook">
-        </map>
+        <img src="images/Top.png" alt="RUNWAY to Delicious Food" class="hero-image">
+        <a href="https://www.facebook.com/runwaysandwiches/" target="_blank" class="facebook-link" title="RUNWAY auf Facebook">
+            <span class="sr-only">Besuche uns auf Facebook</span>
+        </a>
     </div>
-
     <!-- Intro sektion -->
     <section class="intro">
         <h1>TO DELICIOUS FOOD!</h1>
@@ -35,7 +32,6 @@
         <br> <p>Fernöstliche Gewürze Abgestimmt auf den europäischen Gaumen</p>
         <a href="#contact" class="cta-button">Jetzt bestellen</a>
     </section>
-
     <!-- About sektion -->
     <section class="about">
         <h2 class="section-title">Wer wir sind</h2>
@@ -46,12 +42,21 @@
             Wir machen gutes Essen besser
         </p>
     </section>
-
     <!-- Menu sektion -->
     <section class="menu-section" id="menu">
         <h2 class="section-title">Unser Menü</h2>
         <div class="menu-container">
             <div class="menu-grid">
+                <div class="menu-card" onclick="loadMenuCategory('fruestueck')">
+                    <img src="images/süßes.png" alt="Frühstück" class="card-image">
+                    <h3>Frühstück</h3>
+                    <p></p>
+                </div>
+                <div class="menu-card" onclick="loadMenuCategory('lunch')">
+                    <img src="images/lunch.png" alt="lunch" class="card-image">
+                    <h3>Mittagessen & Abendessen</h3>
+                    <p></p>
+                </div>
                 <div class="menu-card" onclick="loadMenuCategory('sandwiches')">
                     <img src="images/sandwiches.png" alt="Sandwiches & Panini" class="card-image">
                     <h3>Sandwiches & Panini</h3>
@@ -72,9 +77,9 @@
                     <h3>Getränke</h3>
                     <p></p>
                 </div>
-                <div class="menu-card" onclick="loadMenuCategory('fruestueck')">
-                    <img src="images/süßes.png" alt="Süßes Frühstück" class="card-image">
-                    <h3>Süßes Frühstück</h3>
+                <div class="menu-card" onclick="loadMenuCategory('spezial')">
+                    <img src="images/office.png" alt="Spezial Frühstück" class="card-image">
+                    <h3>Spezial Frühstück</h3>
                     <p></p>
                 </div>
                 <div class="menu-card" onclick="loadMenuCategory('catering')">
@@ -82,15 +87,9 @@
                     <h3>Office-/Partyservice</h3>
                     <p></p>
                 </div>
-                 <div class="menu-card" onclick="loadMenuCategory('lunch')">
-                    <img src="images/lunch.png" alt="lunch" class="card-image">
-                    <h3>Mittagessen & Abendessen</h3>
-                    <p></p>
-                </div>
             </div>
         </div>
     </section>
-
     <!-- Info sektion -->
     <section class="specials" id="specials">
         <h2 class="section-title">Öffnungszeiten & Services</h2>
@@ -113,7 +112,6 @@
             </div>
         </div>
     </section>
-
     <!-- Kontakt infos -->
     <section class="contact" id="contact">
         <h2 class="section-title">Komm vorbei!</h2>
@@ -133,7 +131,11 @@
             </div>
         </div>
     </section>
-
+    <!-- Google Maps Section -->
+    <section id="googleMapsSection">
+        <h2 class="section-title">Standort</h2>
+        <div id="googleMapsContainer"></div>
+    </section>
     <!-- Menu Modales Overlay -->
     <div id="menuModal" class="menu-modal">
         <div class="menu-modal-content">
@@ -147,13 +149,94 @@
             </div>
         </div>
     </div>
-
+    <!-- Impressum Modal -->
+    <div id="impressumModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('impressum')">✕</button>
+            <h2>Impressum</h2>
+            <h3>Angaben gemäß § 5 TMG</h3>
+            <p>
+                Sobur Sarker<br>
+                RUNWAY Sandwiches<br>
+                Platz der Einheit 1<br>
+                60327 Frankfurt am Main
+            </p>
+            
+            <h3>Kontakt</h3>
+            <p>
+                Telefon: <a href="tel:+49697506768">+49 69 7506768</a><br>
+                Telefax: <a href="tel:+49697506769">+49 69 7506769</a><br>
+                E-Mail: <a href="mailto:info@runway-sandwiches.de">info@runway-sandwiches.de</a>
+            </p>
+            <h3>Umsatzsteuer</h3>
+            <p>
+                Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz: 71496850729
+            </p>
+            <h3>Streitschlichtung</h3>
+            <p>
+                Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: 
+                <a href="http://ec.europa.eu/consumers/odr" target="_blank">http://ec.europa.eu/consumers/odr</a><br>
+                Unsere E-Mail-Adresse finden Sie oben im Impressum.
+            </p>
+            <p>
+                Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+            </p>
+        </div>
+    </div>
+    <!-- Datenschutz Modal -->
+    <div id="datenschutzModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('datenschutz')">✕</button>
+            <h2>Datenschutzerklärung</h2>
+            
+            <h3>2. Hosting</h3>
+            <p>
+                Diese Website wird über Hetzner Online GmbH (Industriestr. 25, 91710 Gunzenhausen, Deutschland) gehostet. 
+                Beim Aufruf der Website wird Ihre IP-Adresse an Hetzner übertragen. 
+                Weitere Informationen finden Sie in der <a href="https://www.hetzner.com/de/datenschutz" target="_blank">Datenschutzerklärung von Hetzner</a>.
+            </p>
+            <h3>3. Google Maps</h3>
+            <p>
+                Diese Website verwendet Google Maps (Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA). 
+                Google Maps wird nur nach Ihrer ausdrücklichen Einwilligung (Cookie-Banner) geladen. 
+                Dabei wird Ihre IP-Adresse an Google übertragen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. a DSGVO (Einwilligung). 
+                Weitere Informationen finden Sie in der <a href="https://policies.google.com/privacy" target="_blank">Datenschutzerklärung von Google</a>.
+            </p>
+            <h3>4. Cookies</h3>
+            <p>
+                Diese Website setzt keine eigenen Tracking- oder Analyse-Cookies. 
+                Es wird lediglich Ihre Cookie-Entscheidung (Akzeptieren/Ablehnen) im lokalen Speicher Ihres Browsers gespeichert. 
+                Durch die Einbindung von Google Maps können nach Ihrer Einwilligung Cookies durch Google gesetzt werden.
+            </p>
+            <h3>5. Ihre Rechte</h3>
+            <p>
+                Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Ihrer personenbezogenen Daten 
+                sowie das Recht auf Datenübertragbarkeit. Wenden Sie sich dazu an die oben genannte Kontaktadresse. 
+                Außerdem haben Sie das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren 
+                (zuständig: <a href="https://www.datenschutz.hessen.de/" target="_blank">Hessischer Beauftragter für Datenschutz und Informationsfreiheit, HBDI</a>).
+            </p>
+        </div>
+    </div>
     <!-- Footer Bereich -->
     <footer>
         <p>&copy; 2026 RUNWAY Sandwiches & Gutes Essen. Alle Rechte vorbehalten.</p>
-        <p><a href="#">Impressum</a> • <a href="#">Datenschutz</a> • <a href="#">AGB</a></p>
+        <p><button class="footer-link" onclick="openModal('impressum')">Impressum</button> • <button class="footer-link" onclick="openModal('datenschutz')">Datenschutz</button></p>
         <p style="margin-top: 1rem; font-size: 0.8rem; color: rgba(255, 255, 255, 0.6);">Website von <a href="https://dogu-webdev.de" target="_blank">Webentwicklung Dogu Ulas Celik</a></p>
     </footer>
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" title="Nach oben">↑</button>
+    <!-- Cookie Banner -->
+    <div id="cookieBanner">
+        <p>
+            Wir nutzen Google Maps und speichern deine Cookie-Entscheidung. 
+            Weitere Infos in <button class="cookie-link" onclick="openModal('impressum')">Impressum</button> und 
+            <button class="cookie-link" onclick="openModal('datenschutz')">Datenschutz</button>.
+        </p>
+        <div class="cookie-buttons">
+            <button id="cookieAccept">Akzeptieren</button>
+            <button id="cookieReject">Ablehnen</button>
+        </div>
+    </div>
     <script src="runway-menu.js"></script>
 </body>
 </html>
