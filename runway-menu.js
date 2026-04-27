@@ -1,3 +1,10 @@
+/* Mobile Menu Toggle */
+function closeMobileMenu() {
+    const mobileNav = document.getElementById('mobileNav');
+    const menuToggle = document.getElementById('menuToggle');
+    mobileNav.classList.remove('active');
+    menuToggle.classList.remove('active');
+}
 
 const menuData = {
     fruestueck: { title: 'Frühstück', description: 'Süßes Frühstück - Muffins, Croissants und mehr', items: [{ name: 'Platzhalter 1', price: '0,00', description: 'Hier kommt bald eine Beschreibung hin' }] },
@@ -85,6 +92,16 @@ function loadGoogleMaps() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+    // Mobile Menu Toggle
+    const menuToggle = document.getElementById('menuToggle');
+    if (menuToggle) {
+        menuToggle.addEventListener('click', function() {
+            const mobileNav = document.getElementById('mobileNav');
+            mobileNav.classList.toggle('active');
+            this.classList.toggle('active');
+        });
+    }
+
     const modals = document.querySelectorAll('.modal');
     [document.getElementById('menuModal'), ...modals].forEach(modal => {
         modal.addEventListener('click', (e) => {

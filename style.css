@@ -21,7 +21,16 @@ nav { display: none; gap: 2rem; font-weight: 500; }
 nav a { text-decoration: none; color: var(--text-primary); transition: color 0.3s; position: relative; }
 nav a::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: var(--accent); transition: width 0.3s; }
 nav a:hover::after { width: 100%; }
-.menu-toggle { background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--primary); }
+
+.nav-mobile { display: none; position: fixed; top: 60px; left: 0; right: 0; background: var(--white); border-bottom: 1px solid var(--border); flex-direction: column; gap: 0; z-index: 99; animation: slideDown 0.3s ease; }
+.nav-mobile.active { display: flex; }
+.nav-mobile a { display: block; padding: 1rem 1.5rem; text-decoration: none; color: var(--text-primary); border-bottom: 1px solid var(--border); transition: background 0.3s; }
+.nav-mobile a:hover { background: var(--neutral-light); color: var(--accent); }
+
+.menu-toggle { background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--primary); transition: color 0.3s; }
+.menu-toggle.active { color: var(--accent); }
+
+@keyframes slideDown { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
 
 /* HERO */
 .hero-banner { width: 100%; background: var(--primary); position: relative; }
@@ -128,7 +137,8 @@ footer a { color: var(--accent-light); text-decoration: none; }
 @media (min-width: 768px) {
     header { padding: 1.25rem 3rem; }
     .logo { font-size: 2rem; }
-    nav { display: flex; }
+    .nav-desktop { display: flex; }
+    .nav-mobile { display: none !important; }
     .menu-toggle { display: none; }
     .hero-image { max-height: 250px; }
     .facebook-link { width: 140px; height: 60px; }
