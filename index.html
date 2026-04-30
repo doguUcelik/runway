@@ -6,6 +6,13 @@
     <title>RUNWAY Sandwiches & Gutes Essen | Frankfurt am Main</title>
     <meta name="description" content="Frische Sandwiches, Panini und leckere Gerichte in Frankfurt. Handwerk, Liebe und europäische Gewürze.">
     <link rel="stylesheet" href="style.css">
+    <style>
+        .card-image {
+            width: 100%;
+            height: 280px;
+            object-fit: contain;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -47,33 +54,29 @@
         <h2 class="section-title">Unser Menü</h2>
         <div class="menu-grid">
             <div class="menu-card" onclick="loadMenuCategory('fruestueck')">
-                <img src="images/süßes.png" alt="Frühstück" class="card-image">
+                <img src="images/suesses.svg" alt="Frühstück" class="card-image">
                 <h3>Frühstück</h3>
             </div>
             <div class="menu-card" onclick="loadMenuCategory('lunch')">
-                <img src="images/lunch.png" alt="lunch" class="card-image">
+                <img src="images/mittagstisch.svg" alt="lunch" class="card-image">
                 <h3>Mittagessen & Abendessen</h3>
             </div>
             <div class="menu-card" onclick="loadMenuCategory('sandwiches')">
-                <img src="images/sandwiches.png" alt="Sandwiches & Panini" class="card-image">
+                <img src="images/sandwiches.svg" alt="Sandwiches & Panini" class="card-image">
                 <h3>Sandwiches & Panini</h3>
                 <p>Knusprig, frisch und mit Premium-Zutaten gefüllt.</p>
             </div>
             <div class="menu-card" onclick="loadMenuCategory('wraps')">
-                <img src="images/wraps.png" alt="Wraps" class="card-image">
+                <img src="images/wraps.svg" alt="Wraps" class="card-image">
                 <h3>Wraps</h3>
             </div>
             <div class="menu-card" onclick="loadMenuCategory('salate')">
-                <img src="images/salate.png" alt="Salate" class="card-image">
+                <img src="images/salate.svg" alt="Salate" class="card-image">
                 <h3>Salate</h3>
             </div>
             <div class="menu-card" onclick="loadMenuCategory('getraenke')">
-                <img src="images/getränke.png" alt="Getränke" class="card-image">
+                <img src="images/kaffee.svg" alt="Getränke" class="card-image">
                 <h3>Getränke</h3>
-            </div>
-            <div class="menu-card" onclick="loadMenuCategory('spezial')">
-                <img src="images/office.png" alt="Spezial Frühstück" class="card-image">
-                <h3>Spezial Frühstück</h3>
             </div>
             <div class="menu-card" onclick="loadMenuCategory('catering')">
                 <img src="images/office.png" alt="Office-/Partyservice" class="card-image">
