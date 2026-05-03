@@ -7,19 +7,68 @@ function closeMobileMenu() {
 }
 
 const menuData = {
-    fruestueck: { title: 'Frühstück', description: 'Süßes Frühstück - Muffins, Croissants und mehr', items: [{ name: 'Platzhalter 1', price: '0,00', description: 'Hier kommt bald eine Beschreibung hin' }] },
-    lunch: { title: 'Mittagessen & Abendessen', description: 'Warme Gerichte und Spezialitäten', items: [{ name: 'Platzhalter Gericht 1', price: '0,00', description: 'Hier kommt bald eine Beschreibung hin' }] },
-    sandwiches: { 
-        title: 'Sandwiches & Panini', 
-        description: 'Knusprig, frisch und mit Premium-Zutaten gefüllt', 
-        items: [
-            { name: 'Platzhalter Sandwich 1', price: '0,00', description: 'Hier kommt bald eine Beschreibung hin' },
-            { name: 'Platzhalter Sandwich 2', price: '0,00', description: 'Hier kommt bald eine Beschreibung hin' }
+    fruestueck: { title: 'Frühstück',
+         description: 'Süßes Frühstück - Muffins, Croissants und mehr', 
+         items: [
+            { name: 'Platzhalter 1', price: '0,00', description: 'Hier kommt bald eine Beschreibung hin' },
         ] 
     },
-    wraps: { title: 'Wraps', description: '', items: [{ name: 'Spicy, Indische Art (vegetarisch)', price: '6,90', description: '' }] },
-    salate: { title: 'Salate', description: '', items: [{ name: 'Platzhalter Salat 1', price: '0,00', description: 'Hier kommt bald eine Beschreibung hin' }] },
-    getraenke: { title: 'Getränke', description: '', items: [{ name: 'Platzhalter Getränk 1', price: '0,00', description: 'Hier kommt bald eine Beschreibung hin' }] },
+
+    lunch: {
+         title: 'Mittagessen & Abendessen',
+        description: 'Warme Gerichte und Spezialitäten', 
+        items: [{ name: 'Platzhalter Gericht 1', price: '0,00', description: 'Hier kommt bald eine Beschreibung hin' }
+        ] 
+    },
+
+    sandwiches: { 
+        title: 'Sandwiches & Panini', 
+        description: 'Creme nach Wahl sowie Tomatenscheiben, Gurken und Salate', 
+        items: [
+            { name: 'Kichererbsen mit Rohkostsalat', price: '5,50', description: 'humus with raw vegetable' },
+            { name: 'Gouda', price: '5,90', description: 'gouda' },
+            { name: 'Mozzarella, Tomaten, Basilikumpesto', price: '6,40', description: 'mozzarella, tomatoes, basil pesto' },
+            { name: 'Salami/ Geflügelwurst/ Kochschinken', price: '6,40', description: 'salami/ turkey-sausage/ boiled ham' },
+            { name: 'Serranoschinken', price: '6,90', description: 'serrano ham' },
+            { name: 'Tandoori Chicken', price: '6,40', description: 'tandoori chicken' },
+            { name: 'Lachs', price: '6,90', description: 'salmon' },
+            { name: 'Panini mit Salami/ Geflügelwurst/ Kochschinken', price: '6,90', description: 'panini with salami/ turkey-sausage/ boiled ham' }
+        ] 
+    },
+
+    wraps: { title: 'Wraps', 
+        description: '', 
+        items: [
+            { name: 'Spicy, Indische Art (vegetarisch)', price: '6,90', description: 'spicy, indian style (vegetarian)' },
+            { name: 'Feta mit Spinat', price: '7,90', description: 'feta cheese with spinach' },
+            { name: 'Mozzarella', price: '7,90', description: 'mozzarella' },
+            { name: 'Feta oder Gouda', price: '7,90', description: 'feta or gouda' },  
+            { name: 'Chili con Carme', price: '7,90', description: 'chili con carne' },
+            { name: 'Tandoori Chicken', price: '7,90', description: 'tandoori chicken' },
+            { name: 'Thunfisch', price: '7,90', description: 'tuna' },
+            { name: 'Lachs', price: '8,90', description: 'salmon' },
+        ] 
+    },
+
+    salate: { 
+        title: 'Salate', 
+        description: '',
+        items: [
+            { name: 'Großer Haussalat', price: '8,90', description: 'large house-style salat' },
+            { name: 'Gemischter Salat mit Oliven und Feta', price: '9,90', description: 'mixed salat with olives and feta cheese' },
+            { name: 'Gemischter Salat mit Thunfisch und Ei', price: '9,90', description: 'mixed salat with tuna and egg' },
+            { name: 'Gemischter Salat mit Tandoori Chicken', price: '9,90', description: 'mixed salat with tandoori chicken' },
+            { name: 'Gemischter Salat mit Mozzarella und Basilikumpesto', price: '9,90', description: 'mixed salat with mozzarella and basil pesto' },
+        ] 
+    },
+
+    getraenke: { 
+        title: 'Getränke', 
+        description: '',
+        items: [
+            { name: 'Platzhalter Getränk 1', price: '0,00', description: 'Hier kommt bald eine Beschreibung hin' }
+        ]
+    },
     spezial: { title: 'Spezial Frühstück', description: 'Besondere Frühstücks-Spezialitäten', items: [{ name: 'Platzhalter Spezial 1', price: '0,00', description: 'Hier kommt bald eine Beschreibung hin' }] },
     catering: { title: 'Office-/Partyservice', description: 'Große Bestellungen für Teams und Veranstaltungen', items: [{ name: 'Platzhalter Paket 1', price: '0,00', description: 'Hier kommt bald eine Beschreibung hin' }] }
 };
