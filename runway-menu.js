@@ -9,8 +9,14 @@ function closeMobileMenu() {
 const menuData = {
     fruestueck: { title: 'Frühstück', description: 'Süßes Frühstück - Muffins, Croissants und mehr', items: [{ name: 'Platzhalter 1', price: '0,00', description: 'Hier kommt bald eine Beschreibung hin' }] },
     lunch: { title: 'Mittagessen & Abendessen', description: 'Warme Gerichte und Spezialitäten', items: [{ name: 'Platzhalter Gericht 1', price: '0,00', description: 'Hier kommt bald eine Beschreibung hin' }] },
-    sandwiches: { title: 'Sandwiches & Panini', description: 'Knusprig, frisch und mit Premium-Zutaten gefüllt', 
-        items: [{ name: 'Platzhalter Sandwich 1', price: '0,00', description: 'Hier kommt bald eine Beschreibung hin' }],  [{ name: 'Platzhalter Sandwich 2', price: '0,00', description: 'Hier kommt bald eine Beschreibung hin' }] },
+    sandwiches: { 
+        title: 'Sandwiches & Panini', 
+        description: 'Knusprig, frisch und mit Premium-Zutaten gefüllt', 
+        items: [
+            { name: 'Platzhalter Sandwich 1', price: '0,00', description: 'Hier kommt bald eine Beschreibung hin' },
+            { name: 'Platzhalter Sandwich 2', price: '0,00', description: 'Hier kommt bald eine Beschreibung hin' }
+        ] 
+    },
     wraps: { title: 'Wraps', description: '', items: [{ name: 'Spicy, Indische Art (vegetarisch)', price: '6,90', description: '' }] },
     salate: { title: 'Salate', description: '', items: [{ name: 'Platzhalter Salat 1', price: '0,00', description: 'Hier kommt bald eine Beschreibung hin' }] },
     getraenke: { title: 'Getränke', description: '', items: [{ name: 'Platzhalter Getränk 1', price: '0,00', description: 'Hier kommt bald eine Beschreibung hin' }] },
