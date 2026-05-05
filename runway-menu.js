@@ -10,14 +10,20 @@ const menuData = {
     fruestueck: { title: 'Frühstück',
          description: 'Süßes Frühstück - Muffins, Croissants und mehr', 
          items: [
-            { name: 'Platzhalter 1', price: '0,00', description: 'Hier kommt bald eine Beschreibung hin' },
+            { name: 'Buttercrossaint mit Kaffee', price: '6,90', description: 'butter crossaint with coffee' },
+            { name: 'Kaffee mit 1 Muffin nach Wahl', price: '7,40', description: 'coffee with 1 muffin of your choice' },
+            { name: 'Frischer Obssalat mit Joghurt', price: '4,90', description: 'fresh fruit salad with yoghurt' },
+            { name: 'Frischer Obssalat mit Joghurt und Müsli', price: '5,40', description: 'fresh fruit salad with yoghurt and muesli' },
+            { name: 'Joghurt mit Müsli', price: '4,50', description: 'yoghurt with muesli' },
+            { name: 'Hausgemachter Milchreis', price: '3,90', description: 'homemade milk rice' }, 
         ] 
     },
 
     lunch: {
-         title: 'Mittagessen & Abendessen',
+        title: 'Mittagessen & Abendessen',
         description: 'Warme Gerichte und Spezialitäten', 
-        items: [{ name: 'Platzhalter Gericht 1', price: '0,00', description: 'Hier kommt bald eine Beschreibung hin' }
+        items: [
+            { name: 'Platzhalter Gericht 1', price: '0,00', description: 'Hier kommt bald eine Beschreibung hin' }
         ] 
     },
 
@@ -63,14 +69,29 @@ const menuData = {
     },
 
     getraenke: { 
-        title: 'Getränke', 
+        title: 'Heiße Getränke', 
         description: '',
         items: [
-            { name: 'Platzhalter Getränk 1', price: '0,00', description: 'Hier kommt bald eine Beschreibung hin' }
+            { name: '', price: '0,00', description: 'Hier kommt bald eine Beschreibung hin' }
         ]
     },
-    spezial: { title: 'Spezial Frühstück', description: 'Besondere Frühstücks-Spezialitäten', items: [{ name: 'Platzhalter Spezial 1', price: '0,00', description: 'Hier kommt bald eine Beschreibung hin' }] },
-    catering: { title: 'Office-/Partyservice', description: 'Große Bestellungen für Teams und Veranstaltungen', items: [{ name: 'Platzhalter Paket 1', price: '0,00', description: 'Hier kommt bald eine Beschreibung hin' }] }
+    spezial: { 
+        title: 'Spezial Frühstück',
+        description: 'Besondere Frühstücks-Spezialitäten', 
+        items: [
+            { name: '2 Rührei mit Toastbrot und Butter', price: '7,90', description: '2 scrambled eggs with toasted bread and butter' },
+            { name: 'Omelett (2 Eier) mit Käse, Tomaten und Toastbrot', price: '8,90', description: 'omelet (2 eggs) with cheese, tomatoes and toasted bread' },
+            { name: 'Omelett (2 Eier) mit Käse, Schinken und Toastbrot', price: '9,90', description: 'omelet (2 eggs) with cheese, ham and toasted bread' },
+            { name: 'Omelett (2 Eier) mit Käse, Lachs und Toastbrot', price: '11,90', description: 'omelet (2 eggs) with cheese, salmon and toasted bread' },
+        ]
+    },
+    catering: { 
+        title: 'Office-/Partyservice', 
+        description: 'Große Bestellungen für Teams und Veranstaltungen',
+        items: [
+            { name: 'Platzhalter Paket 1', price: '0,00', description: 'Hier kommt bald eine Beschreibung hin' }
+        ]
+    }
 };
 
 function loadMenuCategory(category) {
