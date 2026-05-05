@@ -15,7 +15,7 @@ const menuData = {
             { name: 'Frischer Obssalat mit Joghurt', price: '4,90', description: 'fresh fruit salad with yoghurt' },
             { name: 'Frischer Obssalat mit Joghurt und Müsli', price: '5,40', description: 'fresh fruit salad with yoghurt and muesli' },
             { name: 'Joghurt mit Müsli', price: '4,50', description: 'yoghurt with muesli' },
-            { name: 'Hausgemachter Milchreis', price: '3,90', description: 'homemade milk rice' }, 
+            { name: 'Hausgemachter Milchreis', price: '3,90', description: 'homemade milk rice' }
         ] 
     },
 
@@ -23,7 +23,17 @@ const menuData = {
         title: 'Mittagessen & Abendessen',
         description: 'Warme Gerichte und Spezialitäten', 
         items: [
-            { name: 'Platzhalter Gericht 1', price: '0,00', description: 'Hier kommt bald eine Beschreibung hin' }
+            { name: 'Tagessuppe', price: '6,90', description: 'daily soup' },
+            { name: 'Zwei Samosa (vegetarisch) mit gemischten Salat', price: '8,90', description: 'two samosa (vegetarian) with mixed salad' },
+            { name: 'Nachos mit Käse überbacken', price: '7,90', description: 'nachos gratinated with cheese' },
+            { name: 'Nachos mit Käse überbacken & Salsauce', price: '8,90', description: 'nachos gratinated with cheese & salsy sauce' },
+            { name: 'Chili con carne with Nachos', price: '10,90', description: 'chili con carne with bread' },
+            { name: 'Chili con carne mit Reis', price: '10,90', description: 'chili con carne with rice' },
+            { name: 'Asiatische Nudeln mit frischen Gemüse', price: '9,90', description: 'Asian noodles with fresh vegetables' },
+            { name: 'Asiatische Nudeln mit Hühnerfleisch', price: '11,90', description: 'asian noodles with chicken' },
+            { name: 'Indisches Curry mit frischem Gemüse & Reis', price: '9,90', description: 'Indian curry with fresh vegetables & rice' },
+            { name: 'Flammkuchen mit Créme fraîche, Zwiebeln & Schinken', price: '12,90', description: 'tarte flambée with cream fraiche, onions & ham' },
+            { name: 'Flammkuchen mit Créme fraîche, Zwiebeln & Schinken und zusätlich mit Käse überbacken', price: '13,90', description: 'tarte flambée with cream fraiche, onions & ham and gratinated with cheese' }
         ] 
     },
 
@@ -52,7 +62,7 @@ const menuData = {
             { name: 'Chili con Carme', price: '7,90', description: 'chili con carne' },
             { name: 'Tandoori Chicken', price: '7,90', description: 'tandoori chicken' },
             { name: 'Thunfisch', price: '7,90', description: 'tuna' },
-            { name: 'Lachs', price: '8,90', description: 'salmon' },
+            { name: 'Lachs', price: '8,90', description: 'salmon' }
         ] 
     },
 
@@ -64,7 +74,7 @@ const menuData = {
             { name: 'Gemischter Salat mit Oliven und Feta', price: '9,90', description: 'mixed salat with olives and feta cheese' },
             { name: 'Gemischter Salat mit Thunfisch und Ei', price: '9,90', description: 'mixed salat with tuna and egg' },
             { name: 'Gemischter Salat mit Tandoori Chicken', price: '9,90', description: 'mixed salat with tandoori chicken' },
-            { name: 'Gemischter Salat mit Mozzarella und Basilikumpesto', price: '9,90', description: 'mixed salat with mozzarella and basil pesto' },
+            { name: 'Gemischter Salat mit Mozzarella und Basilikumpesto', price: '9,90', description: 'mixed salat with mozzarella and basil pesto' }
         ] 
     },
 
