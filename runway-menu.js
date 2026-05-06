@@ -95,13 +95,21 @@ const menuData = {
             { name: 'Omelett (2 Eier) mit Käse, Lachs und Toastbrot', price: '11,90', description: 'omelet (2 eggs) with cheese, salmon and toasted bread' },
         ]
     },
-    catering: { 
-        title: 'Office-/Partyservice', 
-        description: 'Große Bestellungen für Teams und Veranstaltungen',
+    catering: { title: 'Office-/Partyservice', 
+        description: 'Große Bestellungen für Teams und Veranstaltungen', 
         items: [
-            { name: 'Platzhalter Paket 1', price: '0,00', description: 'Hier kommt bald eine Beschreibung hin' }
+            { name: 'Sandwich-Platte (20 Hälften)', price: '58,90', description: '' },
+            { name: 'warme Wrap-Platte (16 Hälften)', price: '58,90', description: '' },
+            { name: 'kalte Wrap-Platte (16 Hälften)', price: '58,90', description: '' },
+            { name: 'gemischte Sandwich-Wrap-Platte (10 Sandwich und 10 Wrap-Hälften)', price: '64,90', description: '' },
+            { name: 'Samosa-Platte (vegetarisch, 20 Stück)', price: '57,90', description: '' },
+            { name: 'gefüllter Blätterteig mit Spinat und Feta (25 Stück)', price: '49,90', description: '' },
+            { name: 'gefüllte Teigtaschen mit Spinat und Feta (20 Hälften)', price: '54,90', description: '' },
+            { name: 'gefüllte Teigtaschen mit Hähnchenbrust und Gemüse (20 Hälften)', price: '58,90', description: '' },
+            { name: 'Fingerfood-Platte (50 Stück, Vorbestellung!)', price: '89,90', description: '' },
+            { name: 'Fingerfood-Platte (100 Stück, Vorbestellung!)', price: '179,80', description: '' }
         ]
-    }
+     }
 };
 
 function loadMenuCategory(category) {
