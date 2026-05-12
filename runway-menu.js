@@ -8,14 +8,16 @@ function closeMobileMenu() {
 
 const menuData = {
     fruestueck: { title: 'Frühstück',
-         description: 'Süßes Frühstück - Muffins, Croissants und mehr', 
+         description: 'Süßes und Frühsück', 
          items: [
             { name: 'Buttercrossaint mit Kaffee', price: '6,90', description: 'butter crossaint with coffee' },
             { name: 'Kaffee mit 1 Muffin nach Wahl', price: '7,40', description: 'coffee with 1 muffin of your choice' },
-            { name: 'Frischer Obssalat mit Joghurt', price: '4,90', description: 'fresh fruit salad with yoghurt' },
+            { name: 'Frischer Obssalat mit Joghurt', price: '5,90', description: 'fresh fruit salad with yoghurt' },
             { name: 'Frischer Obssalat mit Joghurt und Müsli', price: '5,40', description: 'fresh fruit salad with yoghurt and muesli' },
             { name: 'Joghurt mit Müsli', price: '4,50', description: 'yoghurt with muesli' },
-            { name: 'Hausgemachter Milchreis', price: '3,90', description: 'homemade milk rice' }
+            { name: 'Hausgemachter Milchreis', price: '3,90', description: 'homemade milk rice' },
+            { name: 'Muffin / Brownies / Cookies', price: '4,30', description: 'hmuffin / brownies / cookies' },
+            { name: 'Kuchen (diverse)', price: '4,50', description: 'cake (diverse)' }
         ] 
     },
 
@@ -27,13 +29,17 @@ const menuData = {
             { name: 'Zwei Samosa (vegetarisch) mit gemischten Salat', price: '8,90', description: 'two samosa (vegetarian) with mixed salad' },
             { name: 'Nachos mit Käse überbacken', price: '7,90', description: 'nachos gratinated with cheese' },
             { name: 'Nachos mit Käse überbacken & Salsauce', price: '8,90', description: 'nachos gratinated with cheese & salsy sauce' },
-            { name: 'Chili con carne with Nachos', price: '10,90', description: 'chili con carne with bread' },
-            { name: 'Chili con carne mit Reis', price: '10,90', description: 'chili con carne with rice' },
+            { name: 'Chili con carne mit Brot', price: '8,90', description: 'chili con carne with bread' },
+            { name: 'Chili con carne mit Nachos', price: '11,90', description: 'chili con carne with nachos' },
+            { name: 'Chili con carne mit Reis', price: '11,90', description: 'chili con carne with rice' },
             { name: 'Asiatische Nudeln mit frischen Gemüse', price: '9,90', description: 'Asian noodles with fresh vegetables' },
             { name: 'Asiatische Nudeln mit Hühnerfleisch', price: '11,90', description: 'asian noodles with chicken' },
             { name: 'Indisches Curry mit frischem Gemüse & Reis', price: '9,90', description: 'Indian curry with fresh vegetables & rice' },
+            { name: 'Indisches Curry mit frischem Gemüse, Hühnerfleisch & Reis', price: '11,90', description: 'Indian curry with fresh vegetables, chicken & rice' },
+            { name: 'Flammkuchen mit Créme fraîche, Zwiebeln & Schinken und zusätlich mit Käse überbacken', price: '13,90', description: 'tarte flambée with cream fraiche, onions & ham and gratinated with cheese' },
             { name: 'Flammkuchen mit Créme fraîche, Zwiebeln & Schinken', price: '12,90', description: 'tarte flambée with cream fraiche, onions & ham' },
-            { name: 'Flammkuchen mit Créme fraîche, Zwiebeln & Schinken und zusätlich mit Käse überbacken', price: '13,90', description: 'tarte flambée with cream fraiche, onions & ham and gratinated with cheese' }
+            { name: 'Flammkuchen mit Créme fraîche, Serrano, Schinken und Käse', price: '14,90', description: 'tarte flambée with cream fraiche, serrano, ham and cheese' },
+            { name: 'Flammkuchen mit Tomatencreme, Mozzarella und Balikumpesto', price: '14,90', description: 'tarte flambée with tomato cream, mozzarella and basil pesto' },
         ] 
     },
 
@@ -41,27 +47,27 @@ const menuData = {
         title: 'Sandwiches & Panini', 
         description: 'Creme nach Wahl sowie Tomatenscheiben, Gurken und Salate', 
         items: [
-            { name: 'Kichererbsen mit Rohkostsalat', price: '5,50', description: 'humus with raw vegetable' },
-            { name: 'Gouda', price: '5,90', description: 'gouda' },
-            { name: 'Mozzarella, Tomaten, Basilikumpesto', price: '6,40', description: 'mozzarella, tomatoes, basil pesto' },
-            { name: 'Salami/ Geflügelwurst/ Kochschinken', price: '6,40', description: 'salami/ turkey-sausage/ boiled ham' },
-            { name: 'Serranoschinken', price: '6,90', description: 'serrano ham' },
-            { name: 'Tandoori Chicken', price: '6,40', description: 'tandoori chicken' },
-            { name: 'Lachs', price: '6,90', description: 'salmon' },
-            { name: 'Panini mit Salami/ Geflügelwurst/ Kochschinken', price: '6,90', description: 'panini with salami/ turkey-sausage/ boiled ham' }
+            { name: 'Kichererbsen mit Rohkostsalat', price: '5,90', description: 'humus with raw vegetable' },
+            { name: 'Gouda', price: '6,90', description: 'gouda' },
+            { name: 'Mozzarella, Tomaten, Basilikumpesto', price: '6,90', description: 'mozzarella, tomatoes, basil pesto' },
+            { name: 'Salami/ Geflügelwurst/ Kochschinken', price: '6,90', description: 'salami/ turkey-sausage/ boiled ham' },
+            { name: 'Serranoschinken', price: '7,90', description: 'serrano ham' },
+            { name: 'Tandoori Chicken', price: '6,90', description: 'tandoori chicken' },
+            { name: 'Lachs', price: '7,90', description: 'salmon' },
+            { name: 'Panini mit Salami/ Geflügelwurst/ Kochschinken', price: '7,90', description: 'panini with salami/ turkey-sausage/ boiled ham' }
         ] 
     },
 
     wraps: { title: 'Wraps', 
         description: '', 
         items: [
-            { name: 'Spicy, Indische Art (vegetarisch)', price: '6,90', description: 'spicy, indian style (vegetarian)' },
+            { name: 'Spicy, Indische Art (vegetarisch)', price: '7,90', description: 'spicy, indian style (vegetarian)' },
             { name: 'Feta mit Spinat', price: '7,90', description: 'feta cheese with spinach' },
-            { name: 'Mozzarella', price: '7,90', description: 'mozzarella' },
-            { name: 'Feta oder Gouda', price: '7,90', description: 'feta or gouda' },  
-            { name: 'Chili con Carme', price: '7,90', description: 'chili con carne' },
-            { name: 'Tandoori Chicken', price: '7,90', description: 'tandoori chicken' },
-            { name: 'Thunfisch', price: '7,90', description: 'tuna' },
+            { name: 'Mozzarella', price: '8,40', description: 'mozzarella' },
+            { name: 'Feta oder Gouda', price: '8,40', description: 'feta or gouda' },  
+            { name: 'Chili con Carme', price: '8,40', description: 'chili con carne' },
+            { name: 'Tandoori Chicken', price: '8,40', description: 'tandoori chicken' },
+            { name: 'Thunfisch', price: '8,90', description: 'tuna' },
             { name: 'Lachs', price: '8,90', description: 'salmon' }
         ] 
     },
@@ -79,10 +85,35 @@ const menuData = {
     },
 
     getraenke: { 
-        title: 'Heiße Getränke', 
+        title: 'Getränke', 
         description: '',
         items: [
-            { name: '', price: '0,00', description: 'Hier kommt bald eine Beschreibung hin' }
+            { name: 'Espresso', price: '2,80', description: '' },
+            { name: 'Espresso macchiato', price: '3,00', description: '' },
+            { name: 'Kaffee', price: '3,90', description: 'coffee' },
+            { name: 'Cappuccino/ Milchkaffe klein', price: '4,00', description: 'cappuccino/milk coffee small' },
+            { name: 'Cappuccino/ Milchkaffe groß', price: '5,90', description: 'cappuccino/milk large' },
+            { name: 'Late macchiato', price: '4,50', description: '' },
+            { name: 'Heiße Schokolade (mit Milch zubereitet', price: '4,90', description: 'hot chocolate with milk' },
+            { name: 'Tee (diverse)', price: '4,00', description: 'cup of tea (diverse)' },
+            { name: 'Lassi Natur', price: '4,90', description: '' },
+            { name: 'Lassi Mango', price: '4,90', description: '' },
+            { name: 'Mineralwasser (spritzig)', price: '3,50', description: 'mineral water (sparkling)' },
+            { name: 'Mineralwasser (natur)', price: '3,50', description: 'mineral water (natur)' },
+            { name: 'Cola, Cola light, Fanta', price: '4,25', description: 'coke, coke light, fanta' },
+            { name: 'Apfelsaftschorle', price: '4,25', description: 'apple spritzer' }, 
+            { name: 'Fruchtsaft (diverse)', price: '4,50', description: 'juice (diverse)' },
+            { name: 'Bionade (diverse)', price: '4,25', description: 'Bionade (diverse)' },
+            { name: 'Red Bull', price: '3,75', description: '' },
+            { name: 'Arizona Ice Tea', price: '4,75', description: '' },
+            { name: 'Pilsener Bier klein', price: '3,90', description: 'Pilsener beer small' },
+            { name: 'Pilsener Bier groß', price: '4,40', description: 'Pilsener beer large' },
+            { name: 'Hefeweizen', price: '5,90', description: 'wheat beer' },
+            { name: 'Kristallweizen', price: '5,90', description: 'crystal wheat beer' },
+            { name: 'Apfelwein', price: '4,00', description: 'apple cider' },
+            { name: 'Rotwein/ Weißwein', price: '6,90', description: 'red wine/ white wine' },
+            { name: 'Weinschorle rot / weiß', price: '5,90', description: 'wine spritzer red/white' },
+            { name: 'Piccolo Sekt', price: '5,90', description: 'piccolo sparkling wine' },
         ]
     },
     spezial: { 
@@ -98,14 +129,14 @@ const menuData = {
     catering: { title: 'Office-/Partyservice', 
         description: 'Große Bestellungen für Teams und Veranstaltungen', 
         items: [
-            { name: 'Sandwich-Platte (20 Hälften)', price: '58,90', description: '' },
-            { name: 'warme Wrap-Platte (16 Hälften)', price: '58,90', description: '' },
-            { name: 'kalte Wrap-Platte (16 Hälften)', price: '58,90', description: '' },
-            { name: 'gemischte Sandwich-Wrap-Platte (10 Sandwich und 10 Wrap-Hälften)', price: '64,90', description: '' },
-            { name: 'Samosa-Platte (vegetarisch, 20 Stück)', price: '57,90', description: '' },
+            { name: 'Sandwich-Platte (20 Hälften)', price: '64,90', description: '' },
+            { name: 'warme Wrap-Platte (16 Hälften)', price: '59,90', description: '' },
+            { name: 'kalte Wrap-Platte (16 Hälften)', price: '59,90', description: '' },
+            { name: 'gemischte Sandwich-Wrap-Platte (10 Sandwich und 10 Wrap-Hälften)', price: '69,90', description: '' },
+            { name: 'Samosa-Platte (vegetarisch, 20 Stück)', price: '59,90', description: '' },
             { name: 'gefüllter Blätterteig mit Spinat und Feta (25 Stück)', price: '49,90', description: '' },
-            { name: 'gefüllte Teigtaschen mit Spinat und Feta (20 Hälften)', price: '54,90', description: '' },
-            { name: 'gefüllte Teigtaschen mit Hähnchenbrust und Gemüse (20 Hälften)', price: '58,90', description: '' },
+            { name: 'gefüllte Teigtaschen mit Spinat und Feta (20 Hälften)', price: '49,90', description: '' },
+            { name: 'gefüllte Teigtaschen mit Hähnchenbrust und Gemüse (20 Hälften)', price: '55,90', description: '' },
             { name: 'Fingerfood-Platte (50 Stück, Vorbestellung!)', price: '89,90', description: '' },
             { name: 'Fingerfood-Platte (100 Stück, Vorbestellung!)', price: '179,80', description: '' }
         ]
