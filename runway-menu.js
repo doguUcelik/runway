@@ -8,16 +8,14 @@ function closeMobileMenu() {
 
 const menuData = {
     fruestueck: { title: 'Frühstück',
-         description: 'Süßes und Frühsück', 
+         description: 'Süßes Frühstück - Muffins, Croissants und mehr', 
          items: [
             { name: 'Buttercrossaint mit Kaffee', price: '6,90', description: 'butter crossaint with coffee' },
             { name: 'Kaffee mit 1 Muffin nach Wahl', price: '7,40', description: 'coffee with 1 muffin of your choice' },
-            { name: 'Frischer Obssalat mit Joghurt', price: '5,90', description: 'fresh fruit salad with yoghurt' },
+            { name: 'Frischer Obssalat mit Joghurt', price: '4,90', description: 'fresh fruit salad with yoghurt' },
             { name: 'Frischer Obssalat mit Joghurt und Müsli', price: '5,40', description: 'fresh fruit salad with yoghurt and muesli' },
             { name: 'Joghurt mit Müsli', price: '4,50', description: 'yoghurt with muesli' },
-            { name: 'Hausgemachter Milchreis', price: '3,90', description: 'homemade milk rice' },
-            { name: 'Muffin / Brownies / Cookies', price: '4,30', description: 'hmuffin / brownies / cookies' },
-            { name: 'Kuchen (diverse)', price: '4,50', description: 'cake (diverse)' }
+            { name: 'Hausgemachter Milchreis', price: '3,90', description: 'homemade milk rice' }
         ] 
     },
 
@@ -25,21 +23,21 @@ const menuData = {
         title: 'Mittagessen & Abendessen',
         description: 'Warme Gerichte und Spezialitäten', 
         items: [
-            { name: 'Tagessuppe', price: '6,90', description: 'daily soup' },
-            { name: 'Zwei Samosa (vegetarisch) mit gemischten Salat', price: '8,90', description: 'two samosa (vegetarian) with mixed salad' },
-            { name: 'Nachos mit Käse überbacken', price: '7,90', description: 'nachos gratinated with cheese' },
-            { name: 'Nachos mit Käse überbacken & Salsauce', price: '8,90', description: 'nachos gratinated with cheese & salsy sauce' },
-            { name: 'Chili con carne mit Brot', price: '8,90', description: 'chili con carne with bread' },
-            { name: 'Chili con carne mit Nachos', price: '11,90', description: 'chili con carne with nachos' },
-            { name: 'Chili con carne mit Reis', price: '11,90', description: 'chili con carne with rice' },
-            { name: 'Asiatische Nudeln mit frischen Gemüse', price: '9,90', description: 'Asian noodles with fresh vegetables' },
-            { name: 'Asiatische Nudeln mit Hühnerfleisch', price: '11,90', description: 'asian noodles with chicken' },
-            { name: 'Indisches Curry mit frischem Gemüse & Reis', price: '9,90', description: 'Indian curry with fresh vegetables & rice' },
-            { name: 'Indisches Curry mit frischem Gemüse, Hühnerfleisch & Reis', price: '11,90', description: 'Indian curry with fresh vegetables, chicken & rice' },
-            { name: 'Flammkuchen mit Créme fraîche, Zwiebeln & Schinken und zusätlich mit Käse überbacken', price: '13,90', description: 'tarte flambée with cream fraiche, onions & ham and gratinated with cheese' },
-            { name: 'Flammkuchen mit Créme fraîche, Zwiebeln & Schinken', price: '12,90', description: 'tarte flambée with cream fraiche, onions & ham' },
-            { name: 'Flammkuchen mit Créme fraîche, Serrano, Schinken und Käse', price: '14,90', description: 'tarte flambée with cream fraiche, serrano, ham and cheese' },
-            { name: 'Flammkuchen mit Tomatencreme, Mozzarella und Balikumpesto', price: '14,90', description: 'tarte flambée with tomato cream, mozzarella and basil pesto' },
+            { name: 'Tagessuppe', price: '6,90', description: 'daily soup', allergies: '' },
+            { name: 'Zwei Samosa (vegetarisch) mit gemischten Salat', price: '8,90', description: 'two samosa (vegetarian) with mixed salad', allergies: '' },
+            { name: 'Nachos mit Käse überbacken', price: '7,90', description: 'nachos gratinated with cheese', allergies: '' },
+            { name: 'Nachos mit Käse überbacken & Salsauce', price: '8,90', description: 'nachos gratinated with cheese & salsy sauce', allergies: '' },
+            { name: 'Chili con carne with Nachos', price: '8,90', description: 'chili con carne with nachos', allergies: '' },
+            { name: 'Chili con carne mit Reis', price: '11,90', description: 'chili con carne with rice', allergies: '1,2,3' },
+            { name: 'Chili con carne mit Brot', price: '11,90', description: 'chili con carne with bread', allergies: '1,2,3' },
+            { name: 'Asiatische Nudeln mit frischen Gemüse', price: '9,90', description: 'asian noodles with fresh vegetables', allergies: '1,2,3,4' },
+            { name: 'Asiatische Nudeln mit Hühnerfleisch', price: '12,90', description: 'asian noodles with chicken', allergies: '1,2,3,4' },
+            { name: 'Indisches Curry mit frischem Gemüse & Reis', price: '9,90', description: 'Indian curry with fresh vegetables & rice', allergies: '1,2,3,4' },
+            { name: 'Indisches Curry mit frischem Gemüse, Hühnerfleisch und Reis', price: '11,90', description: 'Indian curry with fresh vegetables, chicken and rice', allergies: '' },
+            { name: 'Flammkuchen mit Créme fraîche, Zwiebeln & Schinken', price: '12,90', description: 'tarte flambée with cream fraiche, onions & ham', allergies: '' },
+            { name: 'Flammkuchen mit Créme fraîche, Zwiebeln, Schinken und Käse überbacken', price: '13,90', description: 'tarte flambée with cream fraiche, onions, ham and gratinated with cheese', allergies: '1,2,3' },
+            { name: 'Flammkuchen mit Créme fraîche, Serranoschinken und Käse', price: '14,90', description: 'tarte flambée with cream fraiche, serrano ham and cheese', allergies: '1,2,3' },
+            { name: 'Flammkuchen mit Tomatencreme, Mozzarella und Basilikumpesto', price: '14,90', description: 'tarte flambée with tomato cream, mozzarella and basil pesto', allergies: '1,2,3' }
         ] 
     },
 
@@ -47,28 +45,28 @@ const menuData = {
         title: 'Sandwiches & Panini', 
         description: 'Creme nach Wahl sowie Tomatenscheiben, Gurken und Salate', 
         items: [
-            { name: 'Kichererbsen mit Rohkostsalat', price: '5,90', description: 'humus with raw vegetable' },
-            { name: 'Gouda', price: '6,90', description: 'gouda' },
-            { name: 'Mozzarella, Tomaten, Basilikumpesto', price: '6,90', description: 'mozzarella, tomatoes, basil pesto' },
-            { name: 'Salami/ Geflügelwurst/ Kochschinken', price: '6,90', description: 'salami/ turkey-sausage/ boiled ham' },
-            { name: 'Serranoschinken', price: '7,90', description: 'serrano ham' },
-            { name: 'Tandoori Chicken', price: '6,90', description: 'tandoori chicken' },
-            { name: 'Lachs', price: '7,90', description: 'salmon' },
-            { name: 'Panini mit Salami/ Geflügelwurst/ Kochschinken', price: '7,90', description: 'panini with salami/ turkey-sausage/ boiled ham' }
+            { name: 'Kichererbsen mit Rohkostsalat', price: '5,90', description: 'humus with raw vegetable', allergies: '' },
+            { name: 'Gouda', price: '6,90', description: 'gouda', allergies: '' },
+            { name: 'Mozzarella, Tomaten, Basilikumpesto', price: '6,90', description: 'mozzarella, tomatoes, basil pesto', allergies: '' },
+            { name: 'Salami/ Geflügelwurst/ Kochschinken', price: '6,90', description: 'salami/ turkey-sausage/ boiled ham', allergies: '1,2,3' },
+            { name: 'Serranoschinken', price: '7,90', description: 'serrano ham', allergies: '' },
+            { name: 'Tandoori Chicken', price: '6,90', description: 'tandoori chicken', allergies: '' },
+            { name: 'Lachs', price: '7,90', description: 'salmon', allergies: '' },
+            { name: 'Panini mit Salami/ Geflügelwurst/ Kochschinken', price: '7,90', description: 'panini with salami/ turkey-sausage/ boiled ham', allergies: '1,2,3' }
         ] 
     },
 
     wraps: { title: 'Wraps', 
         description: '', 
         items: [
-            { name: 'Spicy, Indische Art (vegetarisch)', price: '7,90', description: 'spicy, indian style (vegetarian)' },
-            { name: 'Feta mit Spinat', price: '7,90', description: 'feta cheese with spinach' },
-            { name: 'Mozzarella', price: '8,40', description: 'mozzarella' },
-            { name: 'Feta oder Gouda', price: '8,40', description: 'feta or gouda' },  
-            { name: 'Chili con Carme', price: '8,40', description: 'chili con carne' },
-            { name: 'Tandoori Chicken', price: '8,40', description: 'tandoori chicken' },
-            { name: 'Thunfisch', price: '8,90', description: 'tuna' },
-            { name: 'Lachs', price: '8,90', description: 'salmon' }
+            { name: 'Spicy, Indische Art (vegetarisch)', price: '7,90', description: 'spicy, indian style (vegetarian)', allergies: '' },
+            { name: 'Feta mit Spinat', price: '7,90', description: 'feta cheese with spinach', allergies: '' },
+            { name: 'Mozzarella', price: '8,90', description: 'mozzarella', allergies: '' },
+            { name: 'Feta oder Gouda', price: '8,90', description: 'feta or gouda', allergies: '' },  
+            { name: 'Chili con Carne', price: '8,90', description: 'chili con carne', allergies: '1,2,3' },
+            { name: 'Tandoori Chicken', price: '8,90', description: 'tandoori chicken', allergies: '2' },
+            { name: 'Thunfisch', price: '8,90', description: 'tuna', allergies: '3' },
+            { name: 'Lachs', price: '8,90', description: 'salmon', allergies: '1,2,3' }
         ] 
     },
 
@@ -76,11 +74,11 @@ const menuData = {
         title: 'Salate', 
         description: '',
         items: [
-            { name: 'Großer Haussalat', price: '8,90', description: 'large house-style salat' },
-            { name: 'Gemischter Salat mit Oliven und Feta', price: '9,90', description: 'mixed salat with olives and feta cheese' },
-            { name: 'Gemischter Salat mit Thunfisch und Ei', price: '9,90', description: 'mixed salat with tuna and egg' },
-            { name: 'Gemischter Salat mit Tandoori Chicken', price: '9,90', description: 'mixed salat with tandoori chicken' },
-            { name: 'Gemischter Salat mit Mozzarella und Basilikumpesto', price: '9,90', description: 'mixed salat with mozzarella and basil pesto' }
+            { name: 'Großer Haussalat', price: '8,90', description: 'large house-style salat', allergies: '' },
+            { name: 'Gemischter Salat mit Oliven und Feta', price: '9,90', description: 'mixed salat with olives and feta cheese', allergies: '2' },
+            { name: 'Gemischter Salat mit Thunfisch und Ei', price: '9,90', description: 'mixed salat with tuna and egg', allergies: '3' },
+            { name: 'Gemischter Salat mit Tandoori Chicken', price: '9,90', description: 'mixed salat with tandoori chicken', allergies: '1,2,3' },
+            { name: 'Gemischter Salat mit Mozzarella und Basilikumpesto', price: '9,90', description: 'mixed salat with mozzarella and basil pesto', allergies: '' }
         ] 
     },
 
@@ -94,7 +92,7 @@ const menuData = {
             { name: 'Cappuccino/ Milchkaffe klein', price: '4,00', description: 'cappuccino/milk coffee small' },
             { name: 'Cappuccino/ Milchkaffe groß', price: '5,90', description: 'cappuccino/milk large' },
             { name: 'Late macchiato', price: '4,50', description: '' },
-            { name: 'Heiße Schokolade (mit Milch zubereitet', price: '4,90', description: 'hot chocolate with milk' },
+            { name: 'Heiße Schokolade (mit Milch zubereitet)', price: '4,90', description: 'hot chocolate with milk' },
             { name: 'Tee (diverse)', price: '4,00', description: 'cup of tea (diverse)' },
             { name: 'Lassi Natur', price: '4,90', description: '' },
             { name: 'Lassi Mango', price: '4,90', description: '' },
@@ -113,7 +111,7 @@ const menuData = {
             { name: 'Apfelwein', price: '4,00', description: 'apple cider' },
             { name: 'Rotwein/ Weißwein', price: '6,90', description: 'red wine/ white wine' },
             { name: 'Weinschorle rot / weiß', price: '5,90', description: 'wine spritzer red/white' },
-            { name: 'Piccolo Sekt', price: '5,90', description: 'piccolo sparkling wine' },
+            { name: 'Piccolo Sekt', price: '5,90', description: 'piccolo sparkling wine' }
         ]
     },
     spezial: { 
@@ -123,7 +121,7 @@ const menuData = {
             { name: '2 Rührei mit Toastbrot und Butter', price: '7,90', description: '2 scrambled eggs with toasted bread and butter' },
             { name: 'Omelett (2 Eier) mit Käse, Tomaten und Toastbrot', price: '8,90', description: 'omelet (2 eggs) with cheese, tomatoes and toasted bread' },
             { name: 'Omelett (2 Eier) mit Käse, Schinken und Toastbrot', price: '9,90', description: 'omelet (2 eggs) with cheese, ham and toasted bread' },
-            { name: 'Omelett (2 Eier) mit Käse, Lachs und Toastbrot', price: '11,90', description: 'omelet (2 eggs) with cheese, salmon and toasted bread' },
+            { name: 'Omelett (2 Eier) mit Käse, Lachs und Toastbrot', price: '11,90', description: 'omelet (2 eggs) with cheese, salmon and toasted bread' }
         ]
     },
     catering: { title: 'Office-/Partyservice', 
@@ -157,6 +155,7 @@ function loadMenuCategory(category) {
                 <span class="price">€ ${item.price}</span>
             </div>
             <p class="item-description">${item.description}</p>
+            ${item.allergies ? `<p class="item-allergies">Allergene: ${item.allergies}</p>` : ''}
         </div>
     `).join('');
     modal.classList.add('active');
