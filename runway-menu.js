@@ -56,7 +56,7 @@ const menuData = {
             { name: 'Serranoschinken', price: '7,90', description: 'serrano ham', allergies: '' },
             { name: 'Tandoori Chicken', price: '6,90', description: 'tandoori chicken', allergies: '' },
             { name: 'Lachs', price: '7,90', description: 'salmon', allergies: '' },
-            { name: 'Panini mit Salami/ Geflügelwurst/ Kochschinken', price: '7,90', description: 'panini with salami/ turkey-sausage/ boiled ham', allergies: '1,2,3' }
+            { name: 'Panini mit Salami/ Geflügelwurst/ Kochschinken & Gouda', price: '7,90', description: 'panini with salami/ turkey-sausage/ boiled ham and gouda', allergies: '1,2,3' }
         ] 
     },
 
