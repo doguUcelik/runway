@@ -10,16 +10,16 @@ const menuData = {
     fruestueck: { title: 'Frühstück',
          description: 'Süßes Frühstück - Muffins, Croissants und mehr', 
          items: [
-            { name: 'Buttercrossaint mit Kaffee', price: '6,90', description: 'butter crossaint with coffee', allergies: '' },
-            { name: 'Kaffee mit 1 Muffin nach Wahl', price: '7,40', description: 'coffee with 1 muffin of your choice', allergies: '' },
-            { name: 'Frischer Obstsalat mit Joghurt', price: '5,90', description: 'fresh fruit salad with yogurt', allergies: '' },
-            { name: 'Frischer Obstsalat mit Joghurt und Müsli', price: '6,90', description: 'fresh fruit salad with yogurt & muesli', allergies: '' },
-            { name: 'Joghurt mit Müsli', price: '4,50', description: 'yogurt with muesli', allergies: '' },
-            { name: 'Hausgemachter Milchreis', price: '3,90', description: 'homemade rice pudding', allergies: '' },
-            { name: 'Zwei Rührei mit Toastbrot & Butter', price: '8,90', description: 'two scrambled eggs with toasted bread & butter', allergies: '2,3' },
-            { name: 'Omelett (zwei Eier) mit Käse, Tomaten & Toastbrot', price: '9,90', description: 'omelette (two eggs) with cheese, tomatoes & toasted bread', allergies: '2,3' },
-            { name: 'Omelett (zwei Eier) mit Käse, Schinken & Toastbrot', price: '10,90', description: 'omelette (two eggs) with cheese, ham & toasted bread', allergies: '2,3' },
-            { name: 'Omelett (zwei Eier) mit Käse, Lachs & Toastbrot', price: '11,90', description: 'omelette (two eggs) with cheese, salmon & toasted bread', allergies: '2,3' }
+            { name: 'Buttercrossaint mit Kaffee', price: '6,90', description: 'butter crossaint with coffee', allergies: '1,2,3' },
+            { name: 'Kaffee mit 1 Muffin nach Wahl', price: '7,40', description: 'coffee with 1 muffin of your choice', allergies: '1,2,4' },
+            { name: 'Frischer Obstsalat mit Joghurt', price: '5,90', description: 'fresh fruit salad with yogurt', allergies: '2' },
+            { name: 'Frischer Obstsalat mit Joghurt und Müsli', price: '6,90', description: 'fresh fruit salad with yogurt & muesli', allergies: '1,2,5' },
+            { name: 'Joghurt mit Müsli', price: '4,50', description: 'yogurt with muesli', allergies: '1,2,5' },
+            { name: 'Hausgemachter Milchreis', price: '3,90', description: 'homemade rice pudding', allergies: '2' },
+            { name: 'Zwei Rührei mit Toastbrot & Butter', price: '8,90', description: 'two scrambled eggs with toasted bread & butter', allergies: '1,2,3' },
+            { name: 'Omelett (zwei Eier) mit Käse, Tomaten & Toastbrot', price: '9,90', description: 'omelette (two eggs) with cheese, tomatoes & toasted bread', allergies: '1,2,3' },
+            { name: 'Omelett (zwei Eier) mit Käse, Schinken & Toastbrot', price: '10,90', description: 'omelette (two eggs) with cheese, ham & toasted bread', allergies: '1,2,3' },
+            { name: 'Omelett (zwei Eier) mit Käse, Lachs & Toastbrot', price: '11,90', description: 'omelette (two eggs) with cheese, salmon & toasted bread', allergies: '1,2,3' }
         ] 
     },
 
@@ -27,13 +27,13 @@ const menuData = {
         title: 'Mittagessen & Abendessen',
         description: 'Warme Gerichte und Spezialitäten', 
         items: [
-            { name: 'Tagessuppe', price: '6,90', description: 'daily soup', allergies: '' },
-            { name: 'Zwei Samosa (vegetarisch) mit gemischten Salat', price: '8,90', description: 'two samosa (vegetarian) with mixed salad', allergies: '' },
-            { name: 'Nachos mit Käse überbacken', price: '7,90', description: 'nachos gratinated with cheese', allergies: '' },
-            { name: 'Nachos mit Käse überbacken & Salsauce', price: '8,90', description: 'nachos gratinated with cheese & salsa sauce', allergies: '2,3' },
+            { name: 'Tagessuppe', price: '6,90', description: 'daily soup', allergies: '2' },
+            { name: 'Zwei Samosa (vegetarisch) mit gemischten Salat', price: '8,90', description: 'two samosa (vegetarian) with mixed salad', allergies: '1,2,3' },
+            { name: 'Nachos mit Käse überbacken', price: '7,90', description: 'nachos gratinated with cheese', allergies: '2' },
+            { name: 'Nachos mit Käse überbacken & Salsauce', price: '8,90', description: 'nachos gratinated with cheese & salsa sauce', allergies: '1,2,3' },
             { name: 'Chili con carne mit Brot', price: '9,90', description: 'chili con carne with bread', allergies: '1,2,3' },
-            { name: 'Chili con carne mit Nachos', price: '11,90', description: 'chili con carne with nachos', allergies: '1,2,4' },
-            { name: 'Chili con carne mit Reis', price: '11,90', description: 'chili con carne with rice', allergies: '1,2,5' },
+            { name: 'Chili con carne mit Nachos', price: '11,90', description: 'chili con carne with nachos', allergies: '1,2,3,4' },
+            { name: 'Chili con carne mit Reis', price: '11,90', description: 'chili con carne with rice', allergies: '1,2,3' },
             { name: 'Asiatische Nudeln mit frischen Gemüse', price: '10,90', description: 'asian noodles with fresh vegetables', allergies: '1,2,3,4' },
             { name: 'Asiatische Nudeln mit Hühnerfleisch', price: '11,90', description: 'asian noodles with chicken', allergies: '1,2,3,4' },
             { name: 'Indisches Curry mit frischem Gemüse & Reis', price: '10,90', description: 'Indian curry with fresh vegetables & rice', allergies: '1,2,3' },
@@ -65,12 +65,12 @@ const menuData = {
         items: [
             { name: 'Spicy, Indische Art (vegetarisch)', price: '7,90', description: 'spicy, indian style (vegetarian)', allergies: '' },
             { name: 'Feta mit Spinat', price: '7,90', description: 'feta cheese with spinach', allergies: '' },
-            { name: 'Mozzarella', price: '8,40', description: 'mozzarella', allergies: '2' },
-            { name: 'Feta oder Gouda', price: '8,40', description: 'feta or gouda', allergies: '2' },  
-            { name: 'Chili con Carne', price: '8,40', description: 'chili con carne', allergies: '1,2,3' },
-            { name: 'Tandoori Chicken', price: '8,40', description: 'tandoori chicken', allergies: '1,2' },
-            { name: 'Thunfisch', price: '8,90', description: 'tuna', allergies: '3' },
-            { name: 'Lachs', price: '8,90', description: 'salmon', allergies: '2,3' }
+            { name: 'Mozzarella', price: '8,40', description: 'mozzarella', allergies: '' },
+            { name: 'Feta oder Gouda', price: '8,40', description: 'feta or gouda', allergies: '' },  
+            { name: 'Chili con Carne', price: '8,40', description: 'chili con carne', allergies: '' },
+            { name: 'Tandoori Chicken', price: '8,40', description: 'tandoori chicken', allergies: '' },
+            { name: 'Thunfisch', price: '8,90', description: 'tuna', allergies: '' },
+            { name: 'Lachs', price: '8,90', description: 'salmon', allergies: '' }
         ] 
     },
 
